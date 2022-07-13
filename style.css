@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 10px 100px;
+}
+main {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ahorcado {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    border: gray solid 3px;
+    position: relative;
+    z-index: 1;
+}
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    z-index: 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.poste {
+    position: relative;
+    left: 20%;
+    top: 5%;
+    z-index: 3;
+    height: 250px;
+    width: 10px;
+    background-color: brown;
+}
+.sosten {
+    position: absolute;
+    background-color: brown;
+    top: 5%;
+    left: 20%;
+    height: 5px;
+    width: 100px;
+    transform: rotate(180deg);
+    z-index: 3;
+}
+.muñeco {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+}
+.cabeza {
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+    border-radius: 50%;
+    position: relative;
+    top: 10%;
+    left: calc(50% - 25px);
+    z-index: 2;
+}
+
+.tronco {
+    width: 1px;
+    height: 100px;
+    border: black solid 1px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    z-index: 2;
+}
+.brazo-izquierdo {
+    width: 1px;
+    height: 30px;
+    border: black solid 1px;
+    position: relative;
+    bottom: 5%;
+    left: calc(50% - 10px);
+    z-index: 2;
+    transform: rotate(45deg);
+}
+.brazo-derecho {
+    width: 1px;
+    height: 30px;
+    border: black solid 1px;
+    position: relative;
+    bottom: 11%;
+    left: calc(50% + 10px);
+    z-index: 2;
+    transform: rotate(135deg);
+}
+.pierna-izquierda {
+    width: 1px;
+    height: 40px;
+    border: black solid 1px;
+    position: relative;
+    bottom: 4%;
+    left: calc(50% - 15px);
+    z-index: 2;
+    transform: rotate(45deg);
+}
+.pierna-derecha {
+    width: 1px;
+    height: 40px;
+    border: black solid 1px;
+    position: relative;
+    bottom: 12%;
+    left: calc(50% + 14px);
+    z-index: 2;
+    transform: rotate(135deg);
+}
+
+.abecedario {
+    height: 100px;
+    width: 250px;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    flex-wrap: wrap;
+    /* display: flex; on click from Js*/
+}
+.start {
+    position: absolute;
+    z-index: 5;
+    top: 70%;
+    left: 48%;
+}
+
+.tile {
+    width: 18px;
+    height: 20px;
+    border: black solid 1px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.phrase {
+    position: absolute;
+    z-index: 5;
+    bottom: 10%;
+}
+.space {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    margin: 0 3px;
+    border-bottom: black solid 1px;
+    background-color: #fff;
+    cursor: vertical-text;
+    text-align: center;
+}
+/* .space:invalid {
+    border: red solid 3px;
+} */
